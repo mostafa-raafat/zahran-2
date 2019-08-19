@@ -1,0 +1,300 @@
+@import "./variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./bootswatch";
+
+body {
+  font-family: 'Exo', sans-serif;
+  color: $primary;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.owl-next {
+    width: 70px;
+    height: 60px;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    background: $primary !important;
+    position: relative;
+    span {
+      color: $white;
+      font-size: 50px;
+      top: -9px;
+      right: 19px;
+      position: absolute;
+    }
+}
+
+.owl-prev {
+  width: 70px;
+  height: 60px;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background: $primary !important;
+  position: relative;
+  span {
+    color: $white;
+    font-size: 50px;
+    top: -9px;
+    right: 32px;
+    position: absolute;
+  }
+}
+
+
+
+.header {
+  position: relative;
+  .navbar {
+    min-height: 125px;
+    background-color: #FFFFFF;
+  }
+  .header__logo {
+    height: 72px;
+    width: 82px;
+    margin-left: 96px;
+    @include media-breakpoint-down(sm) { 
+      margin-left: 0;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item .nav-link {
+      font-size: 1.25rem;
+      color: $primary;
+      font-family: 'Exo', sans-serif;
+    }
+    .active .nav-link {
+      color: $pink;
+    } 
+  }
+  .header__image {
+    width: 100%;
+  }
+  .header__content {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    width: 45%;
+    height: 35%;
+    .content__title {
+      font-family: 'Exo';
+      font-size: 2vw;
+      margin: 5% 0 0 10%;
+      color: $primary;
+      
+    }
+    .content__sub-title {
+      font-family: 'Exo';
+      font-weight: bold;
+      font-size: 3.5vw;
+      margin: 3% 0 0 10%;
+      color: $pink;
+    }
+    .content__out-line {
+      transform: rotate(270deg);
+      position: absolute;
+      left: 0;
+      top: 4vw;
+      font-family: 'Exo', sans-serif;
+      font-weight: bold;
+      font-size: 6vw;
+      color: $white;
+      opacity: 0.3;
+      text-shadow: $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px;
+    }
+  }
+}
+
+.sub-header {
+  background-color:rgba(41, 34, 100, 0.1);
+  display: flex;
+  align-items: center;
+  margin: 0 17% 0 3%;
+  padding: 7% 0 7% 1%;
+  @include media-breakpoint-down(md) { 
+    margin: 0;
+    padding: 8% 0 8% 0%;
+  }
+  .sub-header__title {
+    display: inline-block;
+    height: auto;
+    transform: rotate(270deg);
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    margin-right: -15px;
+    font-size: 3.5rem;
+    color: #eae9f0;
+    text-shadow: $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px;
+    @include media-breakpoint-down(md) { 
+      font-size: 2.5rem;
+    }
+    @include media-breakpoint-down(sm) { 
+      font-size: 2rem;
+    }
+  }
+  .sub-header__content { 
+    display: inline-block;
+    width: 60%;
+    @include media-breakpoint-down(md) { 
+      width: 52%;
+    }
+    @include media-breakpoint-down(sm) { 
+      width: 45%;
+    }
+    .content__title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $pink;
+      @include media-breakpoint-down(md) { 
+        font-size: 1.6rem;
+      }
+      @include media-breakpoint-down(sm) { 
+        font-size: 1.4rem;
+      }
+    }
+    .content__text {
+      font-size: 1.6rem;
+      @include media-breakpoint-down(md) { 
+        font-size: 1.2rem;
+      }
+      @include media-breakpoint-down(sm) { 
+        font-size: 1rem;
+      }
+    }
+  }
+  .sub-header__images {
+    position: absolute;
+    right: 10%;
+    @include media-breakpoint-down(md) { 
+      right: 1%;
+    }
+    img {
+      max-width: 170px;
+      max-height: 160px;
+      width: 18vw;
+      height: 16vw;
+      padding: 1%;
+      -webkit-filter: drop-shadow(3px 3px 3px #00000073);
+      filter: drop-shadow(3px 3px 3px #00000073);
+    }
+    :last-child {
+      position: absolute;
+      top: 100%;
+      margin-top: 3px;
+      right: 0;
+    }
+  }
+}
+
+.our-business {
+  margin-top: 100px;
+  height: 500px;
+  .our-business__title {
+    transform: rotate(270deg);
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 15px;
+  }
+  .our-business__box {
+    padding-right: 50px;
+    .box__icon-mission {
+      background-image: url('../images/mission.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 80px;
+      height: 80px;
+    }
+    .box__icon-approach {
+      background-image: url('../images/approach.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 80px;
+      height: 80px;
+    }
+    .box__icon-vision {
+      background-image: url('../images/vision.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 80px;
+      height: 80px;
+    }
+    .box__title {
+      color: $primary;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    .box__description {
+      color: $primary;
+      font-size: 18px;
+    }
+  }
+}
+
+.our-team {
+  .our-team__title {
+    transform: rotate(270deg);
+    font-size: 2.6vw;
+    display: block;
+    font-weight: bold;
+    width: 275px;
+    position: absolute;
+    padding: 0;
+    word-spacing: 10px;
+    bottom: 13.5vw;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+#quote-carousel .carousel-control {
+  background: none;
+  color: #CACACA;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+  position: relative;
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-top: 20px;
+  margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all .4s ease-in;
+  vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+  width: 128px;
+  height: 128px;
+  opacity: 1;
+  transition: all .2s;
+}
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
