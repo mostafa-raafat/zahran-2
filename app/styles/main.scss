@@ -2,6 +2,8 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./bootswatch";
 
+*:focus {outline:none !important}
+
 body {
   font-family: 'Exo', sans-serif;
   color: $primary;
@@ -264,11 +266,12 @@ body {
 }
 #quote-carousel .carousel-indicators {
   position: relative;
+  display: flex;
+  align-items: center;
   right: 50%;
   top: auto;
   bottom: 0px;
-  margin-top: 20px;
-  margin-right: -19px;
+  margin: 20px;
 }
 #quote-carousel .carousel-indicators li {
   width: 50px;
@@ -276,15 +279,15 @@ body {
   cursor: pointer;
   border: 1px solid #ccc;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  margin: 40px 20px;
   opacity: 0.4;
   overflow: hidden;
   transition: all .4s ease-in;
   vertical-align: middle;
 }
 #quote-carousel .carousel-indicators .active {
-  width: 128px;
-  height: 128px;
+  width: 100px;
+  height: 100px;
   opacity: 1;
   transition: all .2s;
 }
@@ -297,4 +300,66 @@ body {
   font-family: 'Fontawesome';
   float: left;
   margin-right: 10px;
+}
+
+.carousel-control-next {
+  right: -10%;
+  opacity: 1;
+  top: 40%;
+}
+
+.carousel-control-prev {
+  left: -10%;
+  opacity: 1;
+  top: 40%;
+}
+
+.carousel-inner {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  border: 1px solid #2922641a;
+  padding: 30px;
+  .carousel-item strong {
+    display: block;
+    color: $purple;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  .carousel-item small {
+    display: block;
+    font-size: 12px;
+    color: $pink;
+    margin: 5px 0 10px 0;
+  }
+}
+
+.fa-arrow-circle-right:before, .fa-arrow-circle-left:before {
+  color: $pink;
+  font-size: 30px;
+}
+
+.testimonials {
+  min-height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.our-projects {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  margin: 50px;
+}
+
+.card {
+  width: 18rem;
+  margin: 10px;
+  &:hover {
+    border: 1px solid $primary;
+    .card-text {
+      display: block !important;
+    }
+  }
 }
