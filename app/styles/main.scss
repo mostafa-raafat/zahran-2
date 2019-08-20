@@ -347,38 +347,39 @@ body {
 
 /*Start Footer Style*/
 .footer {
-  padding: 67px 20px 41px 85px;
+  padding:45px 20px 35px 60px;
   background-color: $purple;
   margin-top: 80px;
   .footer__img {
-    width: 104px;
-    height: 93px;
-    margin-bottom: 30px;
+    width: 86px;
+    height: 70px;
+    margin-bottom: 15px;
   }
 
   .footer__desc {
-    font-size: 18px;
+    font-size: 16px;
     color: $white;
   }
   .footer__navigation {
     list-style-type: none;
     .footer__navigation--item {
-      font-size: 20px;
+      font-size: 18px;
       color: $white;
-      padding-top: 26px;
+      padding-top: 20px;
       line-height: 27px;
       cursor: pointer;
     }
   }
 
   .subscribe {
-    padding: 48px 0px 20px 53px;
+    padding: 38px 0px 20px 40px;
     background-color: $pink;
-    margin-top: -20%;
+    margin-right: 15px;
+    margin-top: -18%;
     .subscribe__title {
       color: $white;
-      font-size: 30px;
-      margin-bottom: 30px;
+      font-size: 26px;
+      margin-bottom: 20px;
     }
     .subscribe__input {
       input {
@@ -386,7 +387,7 @@ body {
         border: none;
         border-bottom: 1px solid $purple;
         width: 60%;
-        font-size: 20px;
+        font-size: 18px;
         padding: 0 0 10px 0;
         color: $purple;
         font-weight: 500
@@ -400,8 +401,8 @@ body {
     }
     .subscribe__btn {
       button {
-        font-size: 25px;
-        padding: 20px 41px 26px 42px;
+        font-size: 26px;
+        padding: 12px 41px 15px 42px;
         background-color: $purple;
         color: $white;
         border: none;
