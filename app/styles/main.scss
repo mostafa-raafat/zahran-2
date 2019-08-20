@@ -13,24 +13,29 @@ body {
   padding: 0;
 }
 
+.row{
+  margin:0 !important;
+}
+
 .owl-dots {
   display: none;
 }
 
 .owl-next {
-    width: 70px;
-    height: 60px;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    background: $primary !important;
-    position: relative;
-    span {
-      color: $white;
-      font-size: 50px;
-      top: -9px;
-      right: 19px;
-      position: absolute;
-    }
+  width: 70px;
+  height: 60px;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background: $primary !important;
+  position: relative;
+
+  span {
+    color: $white;
+    font-size: 50px;
+    top: -9px;
+    right: 19px;
+    position: absolute;
+  }
 }
 
 .owl-prev {
@@ -40,6 +45,7 @@ body {
   border-radius: 0 !important;
   background: $primary !important;
   position: relative;
+
   span {
     color: $white;
     font-size: 50px;
@@ -53,15 +59,18 @@ body {
 
 .header {
   position: relative;
+
   .navbar {
     min-height: 125px;
     background-color: #FFFFFF;
   }
+
   .header__logo {
     height: 72px;
     width: 82px;
     margin-left: 96px;
-    @include media-breakpoint-down(sm) { 
+
+    @include media-breakpoint-down(sm) {
       margin-left: 0;
     }
   }
@@ -72,26 +81,31 @@ body {
       color: $primary;
       font-family: 'Exo', sans-serif;
     }
+
     .active .nav-link {
       color: $pink;
-    } 
+    }
   }
+
   .header__image {
     width: 100%;
   }
+
   .header__content {
     position: absolute;
     bottom: 0;
     background: #fff;
     width: 45%;
     height: 35%;
+
     .content__title {
       font-family: 'Exo';
       font-size: 2vw;
       margin: 5% 0 0 10%;
       color: $primary;
-      
+
     }
+
     .content__sub-title {
       font-family: 'Exo';
       font-weight: bold;
@@ -99,6 +113,7 @@ body {
       margin: 3% 0 0 10%;
       color: $pink;
     }
+
     .content__out-line {
       transform: rotate(270deg);
       position: absolute;
@@ -115,15 +130,17 @@ body {
 }
 
 .sub-header {
-  background-color:rgba(41, 34, 100, 0.1);
+  background-color: rgba(41, 34, 100, 0.1);
   display: flex;
   align-items: center;
   margin: 0 17% 0 3%;
   padding: 7% 0 7% 1%;
-  @include media-breakpoint-down(md) { 
+
+  @include media-breakpoint-down(md) {
     margin: 0;
     padding: 8% 0 8% 0%;
   }
+
   .sub-header__title {
     display: inline-block;
     height: auto;
@@ -134,49 +151,63 @@ body {
     font-size: 3.5rem;
     color: #eae9f0;
     text-shadow: $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px, $pink 0px 0px 1px;
-    @include media-breakpoint-down(md) { 
+
+    @include media-breakpoint-down(md) {
       font-size: 2.5rem;
     }
-    @include media-breakpoint-down(sm) { 
+
+    @include media-breakpoint-down(sm) {
       font-size: 2rem;
     }
   }
-  .sub-header__content { 
+
+  .sub-header__content {
     display: inline-block;
     width: 60%;
-    @include media-breakpoint-down(md) { 
+
+    @include media-breakpoint-down(md) {
       width: 52%;
     }
-    @include media-breakpoint-down(sm) { 
+
+    @include media-breakpoint-down(sm) {
       width: 45%;
     }
+
     .content__title {
       font-size: 2rem;
       font-weight: bold;
       color: $pink;
-      @include media-breakpoint-down(md) { 
+
+      @include media-breakpoint-down(md) {
         font-size: 1.6rem;
       }
-      @include media-breakpoint-down(sm) { 
+
+      @include media-breakpoint-down(sm) {
         font-size: 1.4rem;
       }
     }
+
     .content__text {
       font-size: 1.6rem;
-      @include media-breakpoint-down(md) { 
+
+      @include media-breakpoint-down(md) {
         font-size: 1.2rem;
       }
-      @include media-breakpoint-down(sm) { 
+
+      @include media-breakpoint-down(sm) {
         font-size: 1rem;
       }
     }
   }
+
   .sub-header__images {
     position: absolute;
     right: 10%;
-    @include media-breakpoint-down(md) { 
+
+    @include media-breakpoint-down(md) {
       right: 1%;
     }
+
     img {
       max-width: 170px;
       max-height: 160px;
@@ -186,6 +217,7 @@ body {
       -webkit-filter: drop-shadow(3px 3px 3px #00000073);
       filter: drop-shadow(3px 3px 3px #00000073);
     }
+
     :last-child {
       position: absolute;
       top: 100%;
@@ -198,14 +230,17 @@ body {
 .our-business {
   margin-top: 100px;
   height: 500px;
+
   .our-business__title {
     transform: rotate(270deg);
     font-size: 1.8rem;
     font-weight: bold;
     padding-top: 15px;
   }
+
   .our-business__box {
     padding-right: 50px;
+
     .box__icon-mission {
       background-image: url('../images/mission.png');
       background-size: 100%;
@@ -213,6 +248,7 @@ body {
       width: 80px;
       height: 80px;
     }
+
     .box__icon-approach {
       background-image: url('../images/approach.png');
       background-size: 100%;
@@ -220,6 +256,7 @@ body {
       width: 80px;
       height: 80px;
     }
+
     .box__icon-vision {
       background-image: url('../images/vision.png');
       background-size: 100%;
@@ -227,17 +264,21 @@ body {
       width: 80px;
       height: 80px;
     }
+
     .box__title {
       color: $primary;
       font-weight: bold;
       font-size: 25px;
     }
+
     .box__description {
       color: $primary;
       font-size: 18px;
     }
   }
 }
+
+
 
 .our-team {
   .our-team__title {
@@ -264,6 +305,7 @@ body {
   text-shadow: none;
   margin-top: 30px;
 }
+
 #quote-carousel .carousel-indicators {
   position: relative;
   display: flex;
@@ -273,6 +315,7 @@ body {
   bottom: 0px;
   margin: 20px;
 }
+
 #quote-carousel .carousel-indicators li {
   width: 50px;
   height: 50px;
@@ -285,16 +328,19 @@ body {
   transition: all .4s ease-in;
   vertical-align: middle;
 }
+
 #quote-carousel .carousel-indicators .active {
   width: 100px;
   height: 100px;
   opacity: 1;
   transition: all .2s;
 }
+
 .item blockquote {
   border-left: none;
   margin: 0;
 }
+
 .item blockquote p:before {
   content: "\f10d";
   font-family: 'Fontawesome';
@@ -350,16 +396,116 @@ body {
   min-height: 400px;
   display: flex;
   align-items: center;
-  margin: 50px;
+  margin: 100px 0 !important;
+  &__title {
+    margin: 50px 0;
+    font-weight: bold;
+    font-size: 35px;
+  }
 }
 
 .card {
+  cursor: pointer;
   width: 18rem;
   margin: 10px;
+  position: relative;
+  border: none;
   &:hover {
     border: 1px solid $primary;
     .card-text {
       display: block !important;
     }
+    .fa-long-arrow-right{
+      background: $primary;
+      color: $white;
+      bottom: 0;
+    }
+  }
+  .card-text {
+    width: 80%;
+  }
+  .fa-long-arrow-right {
+    position: absolute;
+    bottom: 73px;
+    border: 0;
+    background: $white;
+    right: 0;
+    width: 60px;
+    text-align: center;
+    font-size: 30px;
+    height: 60px;
+    &::before {
+      text-align: center;
+      top: 16px;
+      position: absolute;
+      right: 12px;
+    }
   }
 }
+/*Start Footer Style*/
+.footer {
+  padding: 67px 20px 41px 85px;
+  background-color: $purple;
+  margin-top: 80px;
+  .footer__img {
+    width: 104px;
+    height: 93px;
+    margin-bottom: 30px;
+  }
+
+  .footer__desc {
+    font-size: 18px;
+    color: $white;
+  }
+  .footer__navigation {
+    list-style-type: none;
+    .footer__navigation--item {
+      font-size: 20px;
+      color: $white;
+      padding-top: 26px;
+      line-height: 27px;
+      cursor: pointer;
+    }
+  }
+
+  .subscribe {
+    padding: 48px 0px 20px 53px;
+    background-color: $pink;
+    margin-top: -20%;
+    .subscribe__title {
+      color: $white;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .subscribe__input {
+      input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $purple;
+        width: 60%;
+        font-size: 20px;
+        padding: 0 0 10px 0;
+        color: $purple;
+        font-weight: 500
+      }
+      input::placeholder {
+        color: $purple;
+      }
+      input:focus{
+        outline: none;
+      }
+    }
+    .subscribe__btn {
+      button {
+        font-size: 25px;
+        padding: 20px 41px 26px 42px;
+        background-color: $purple;
+        color: $white;
+        border: none;
+        float: right;
+        margin-top: -44px;
+      }
+    }
+  }
+}
+/*End Footer Style*/
