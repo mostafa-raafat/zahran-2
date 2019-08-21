@@ -2,7 +2,9 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./bootswatch";
 
-*:focus {outline:none !important}
+*:focus {
+  outline: none !important
+}
 
 body {
   font-family: 'Exo', sans-serif;
@@ -13,8 +15,13 @@ body {
   padding: 0;
 }
 
-.row{
-  margin:0 !important;
+.row {
+  margin: 0 !important;
+}
+
+.center {
+  margin: 0 auto;
+  display: table;
 }
 
 .owl-dots {
@@ -366,6 +373,7 @@ body {
   margin-left: 10%;
   border: 1px solid #2922641a;
   padding: 30px;
+
   .carousel-item strong {
     display: block;
     color: $purple;
@@ -373,6 +381,7 @@ body {
     font-weight: bold;
     margin: 5px 0;
   }
+
   .carousel-item small {
     display: block;
     font-size: 12px;
@@ -381,7 +390,8 @@ body {
   }
 }
 
-.fa-arrow-circle-right:before, .fa-arrow-circle-left:before {
+.fa-arrow-circle-right:before,
+.fa-arrow-circle-left:before {
   color: $pink;
   font-size: 30px;
 }
@@ -397,6 +407,7 @@ body {
   display: flex;
   align-items: center;
   margin: 100px 0 !important;
+
   &__title {
     margin: 50px 0;
     font-weight: bold;
@@ -410,20 +421,26 @@ body {
   margin: 10px;
   position: relative;
   border: none;
+
   &:hover {
     border: 1px solid $primary;
+    box-sizing: border-box;
+
     .card-text {
       display: block !important;
     }
-    .fa-long-arrow-right{
+
+    .fa-long-arrow-right {
       background: $primary;
       color: $white;
       bottom: 0;
     }
   }
+
   .card-text {
     width: 80%;
   }
+
   .fa-long-arrow-right {
     position: absolute;
     bottom: 73px;
@@ -434,6 +451,7 @@ body {
     text-align: center;
     font-size: 30px;
     height: 60px;
+
     &::before {
       text-align: center;
       top: 16px;
@@ -442,11 +460,53 @@ body {
     }
   }
 }
+
+/*Start our service style*/
+.our-service {
+  .service__desc {
+    padding: 3% 77px 3% 9%;
+    background-color: $purple;
+    color: $white;
+    font-size: 24px;
+  }
+
+  .service__container {
+    margin: 0 10%;
+
+    .service__card--purple {
+      padding: 10px 20px 35px;
+      font-size: 14px;
+      color: #fff;
+      background-color: $purple;
+      width: 78%;
+      margin-bottom: 30px;
+    }
+
+    .service__card {
+      border: 1px solid #eee;
+      padding: 15px;
+      color: $purple;
+      font-size: 14px;
+      width: 78%;
+      margin-bottom: 30px;
+    }
+
+    .service__card--more {
+      padding: 64px 15px;
+    }
+  }
+}
+
+/*End Our Service Style*/
+
+
+
 /*Start Footer Style*/
 .footer {
-  padding:45px 20px 35px 60px;
+  padding: 45px 20px 26px 60px;
   background-color: $purple;
   margin-top: 80px;
+
   .footer__img {
     width: 86px;
     height: 70px;
@@ -457,8 +517,10 @@ body {
     font-size: 16px;
     color: $white;
   }
+
   .footer__navigation {
     list-style-type: none;
+
     .footer__navigation--item {
       font-size: 18px;
       color: $white;
@@ -469,49 +531,56 @@ body {
   }
 
   .subscribe {
-    padding: 38px 0px 20px 40px;
+    padding: 7% 0px 6% 8%;
     background-color: $pink;
     margin-right: 15px;
     margin-top: -18%;
+
     .subscribe__title {
       color: $white;
-      font-size: 26px;
+      font-size: 24px;
       margin-bottom: 20px;
     }
+
     .subscribe__input {
       input {
         background-color: transparent;
         border: none;
         border-bottom: 1px solid $purple;
         width: 60%;
-        font-size: 18px;
+        font-size: 15px;
         padding: 0 0 10px 0;
         color: $purple;
         font-weight: 500
       }
+
       input::placeholder {
         color: $purple;
       }
-      input:focus{
+
+      input:focus {
         outline: none;
       }
     }
+
     .subscribe__btn {
       button {
-        font-size: 26px;
-        padding: 12px 41px 15px 42px;
-        background-color: $purple;
-        color: $white;
+        padding: 3% 7%;
+        color: #fff;
         border: none;
         float: right;
-        margin-top: -44px;
+        margin-top: -31px;
+        font-size: 24px;
+        background-color: $purple;
+
       }
     }
   }
 
-  .footer__desc--bottom{
+  .footer__desc--bottom {
     margin: 0 auto;
     margin-top: 35px;
   }
 }
+
 /*End Footer Style*/
