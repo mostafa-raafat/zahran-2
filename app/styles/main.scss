@@ -442,6 +442,18 @@ body {
     }
   }
 }
+
+.logo_criticl {
+  padding: 100px 0;
+  .owl-carousel {
+    border: 1px solid #2922641a;
+    padding: 50px 0;
+  }
+  .owl-nav {
+    display: none;
+  }
+}
+
 /*Start Footer Style*/
 .footer {
   padding:45px 20px 35px 60px;
