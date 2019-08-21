@@ -44,7 +44,7 @@
     "build": "cross-env NODE_ENV=production gulp",
     "test": "npm run serve:test",
     "tasks": "gulp --tasks",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "browserslist": [
     "> 1%",

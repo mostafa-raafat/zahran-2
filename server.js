@@ -1,33 +1,16 @@
-var webpack = require('webpack')
-var webpackDevMiddleware = require('webpack-dev-middleware')
-var webpackHotMiddleware = require('webpack-hot-middleware')
-var config = require('./webpack.config')
-var serveStatic = require('serve-static');
-var sendMail = require('./src/api/sendmail');
-var bodyParser = require('body-parser');
-var app = new (require('express'))()
-
-var port = process.env.WEBPACK_PORT || 3000
-
-var compiler = webpack(config)
-app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }))
-app.use(webpackHotMiddleware(compiler))
-
-// parse application/json
-app.use(bodyParser.json());
-
-    // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }));
-
-
-app.get('*', function(req, res) {
-    res.sendFile(__dirname + '/dist/index.html')
-})
-
-app.listen(port, function(error) {
-    if (error) {
-      console.error(error)
-    } else {
-      console.info("==> 🌎  Listening on port %s. Open up http://localhost:%s/ in your browser.", port, port)
-    }
-  })
+//Install express server
+const express = require('express');
+const path = require('path');
+ 
+const app = express();
+ 
+// Serve only the static files form the dist directory
+// Replace the '/dist/<to_your_project_name>'
+app.use(express.static(__dirname + '/dist'));
+ 
+app.get('*', function(req,res) {
+  // Replace the '/dist/<to_your_project_name>/index.html'
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
+});
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
