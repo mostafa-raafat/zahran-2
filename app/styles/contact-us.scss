@@ -152,6 +152,13 @@ body {
     flex-direction: column;
     width: 80%;
     margin: 10%;
+    form {
+        width: 70%;
+    }
+    h3 {
+        width: 70%;
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -159,7 +166,7 @@ body {
     color: $white;
     display: flex;
     width: 80%;
-    padding: 1% 0% 15% 10%;
+    padding: 10% 0% 10% 10%;
     position: relative;
 
     &__info {
@@ -209,7 +216,7 @@ body {
         position: absolute;
         width: 62%;
         right: -15%;
-        top: 15%;
+        top: 38%;
 
         #gmap_canvas {
             width: 100%;
