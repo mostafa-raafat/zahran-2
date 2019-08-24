@@ -1,6 +1,6 @@
-@import "./variables";
+@import "./scss/variables";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./bootswatch";
+@import "./scss/bootswatch";
 
 @import "./font-awesome";
 
@@ -79,8 +79,14 @@ body {
     width: 82px;
     margin-left: 96px;
 
-    @include media-breakpoint-down(sm) {
-      margin-left: 0;
+    @include media-breakpoint-down(md) {
+      margin-left: 15px;
+    }
+  }
+
+  .navbar-collapse {
+    @include media-breakpoint-down(md) {
+      margin-left: 15px;
     }
   }
 
@@ -293,6 +299,7 @@ body {
   height: 500px;
   display: flex;
   align-items: center;
+
   .our-team__title {
     transform: rotate(270deg);
     font-size: 2.6vw;
@@ -468,10 +475,12 @@ body {
 
 .logo_criticl {
   padding: 100px 0;
+
   .owl-carousel {
     border: 1px solid #2922641a;
     padding: 50px 0;
   }
+
   .owl-nav {
     display: none;
   }
@@ -479,11 +488,12 @@ body {
 
 /*Start our service style*/
 .our-service {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    padding: 100px 0 0 0;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0 0 0;
+
   .service__desc {
     padding: 4.5% 15px;
     background-color: #292264;
