@@ -96,10 +96,10 @@ body {
       color: $primary;
       font-family: 'Exo', sans-serif;
     }
+  }
 
-    .active .nav-link {
-      color: $pink;
-    }
+  .navbar-light .navbar-nav .active > .nav-link{
+    color: $pink !important;
   }
 
   .header__image {
@@ -623,3 +623,6 @@ body {
 
 
 @import "./contact-us.scss";
+
+
+@import "./our-team.scss";

@@ -1,0 +1,246 @@
+@import "./scss/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./scss/bootswatch";
+
+@import "./font-awesome";
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.center {
+    margin: 0 auto;
+    display: table;
+}
+
+.owl-dots {
+    display: none;
+  }
+  
+  .owl-carousel {
+    position: relative;
+  }
+  .owl-next {
+    width: 50px;
+    height: 40px;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    background: #ffffffad !important;
+    color: $primary !important;
+  
+    span {
+      color: $primary;
+      font-size: 50px;
+      position: absolute;
+      top: -22px;
+      left: 17px;
+    }
+  }
+  
+  .owl-prev {
+    display: none !important;
+  }
+
+.our-team {
+    &__header {
+        position: relative;
+
+        .navbar {
+            min-height: 125px;
+            background-color: $white;
+        }
+
+        .header__logo {
+            height: 72px;
+            width: 82px;
+            margin-left: 96px;
+
+            @include media-breakpoint-down(md) {
+                margin-left: 15px;
+            }
+        }
+
+        .navbar-collapse {
+            @include media-breakpoint-down(md) {
+                margin-left: 15px;
+            }
+        }
+
+        .navbar-nav {
+            .nav-item .nav-link {
+                font-size: 1.25rem;
+                color: $primary;
+                font-family: 'Exo', sans-serif;
+            }
+
+            .active .nav-link {
+                color: $pink;
+            }
+        }
+
+        .header__image {
+            width: 100%;
+        }
+
+        .header__content {
+            position: absolute;
+            bottom: 0;
+            background: #fff;
+            width: 45%;
+            height: 35%;
+
+            .content__title {
+                font-family: 'Exo';
+                font-size: 2vw;
+                margin: 5% 0 0 10%;
+                color: $primary;
+
+            }
+
+            .content__sub-title {
+                font-family: 'Exo';
+                font-weight: bold;
+                font-size: 3.5vw;
+                margin: 3% 0 0 10%;
+                color: $pink;
+            }
+
+            .content__out-line {
+                transform: rotate(270deg);
+                position: absolute;
+                left: 0;
+                top: 4vw;
+                font-family: 'Exo', sans-serif;
+                font-weight: bold;
+                font-size: 6vw;
+                color: $white;
+                opacity: 0.3;
+                text-shadow: $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px;
+            }
+        }
+    }
+
+    &__team {
+        height: 500px;
+        display: flex;
+        align-items: center;
+      
+        .our-team__title {
+          transform: rotate(270deg);
+          font-size: 30px;
+          display: block;
+          font-weight: bold;
+          width: 275px;
+          position: absolute;
+          padding: 0;
+          word-spacing: 10px;
+          bottom: .5vw;
+          margin: 0;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          color: $purple;
+          letter-spacing: 12px;
+        }
+        .team-title {
+            margin-bottom: 15px;
+            p   {
+                font-size: 35px;
+                font-weight: 600;
+                color: $purple;
+                letter-spacing: 10px;
+                margin: 0;
+            }
+        }
+      }
+
+    &__footer {
+        padding: 45px 20px 26px 60px;
+        background-color: $purple;
+        margin-top: 80px;
+
+        .footer__img {
+            width: 86px;
+            height: 70px;
+            margin-bottom: 15px;
+        }
+
+        .footer__desc {
+            font-size: 16px;
+            color: $white;
+        }
+
+        .footer__navigation {
+            list-style-type: none;
+
+            .footer__navigation--item {
+                font-size: 20px;
+                color: $white;
+                padding-top: 20px;
+                line-height: 27px;
+                cursor: pointer;
+            }
+        }
+
+        .subscribe {
+            padding: 7% 0px 6% 8%;
+            background-color: $pink;
+            margin-right: 15px;
+            margin-top: -18%;
+
+            .subscribe__title {
+                color: $white;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .subscribe__input {
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid $purple;
+                    width: 60%;
+                    font-size: 15px;
+                    padding: 0 0 10px 0;
+                    color: $purple;
+                    font-weight: 500
+                }
+
+                input::placeholder {
+                    color: $purple;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+            }
+
+            .subscribe__btn {
+                button {
+                    padding: 3% 7%;
+                    color: #fff;
+                    border: none;
+                    float: right;
+                    margin-top: -31px;
+                    font-size: 24px;
+                    background-color: $purple;
+
+                }
+            }
+        }
+
+        .footer__desc--bottom {
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+    }
+}
+
+
