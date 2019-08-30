@@ -4,15 +4,6 @@
 
 @import "./font-awesome";
 
-@import "./our-team.scss";
-
-@import "./about.scss";
-
-
-@import "./contact-us.scss";
-
-
-
 *:focus {
   outline: none !important
 }
@@ -627,3 +618,8 @@ body {
 
 /*End Footer Style*/
 
+
+@import "./about.scss";
+
+
+@import "./contact-us.scss";
