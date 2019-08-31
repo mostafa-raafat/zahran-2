@@ -98,7 +98,32 @@
     }
 
     &__tap {
-        margin-top: 5% !important;
+
+
+        .projects__text {
+            width: 80%;
+            margin: 60px 10% 40px 10% !important;
+            margin-bottom: 40px;
+            .text__title {
+                letter-spacing: 16px;
+                display: block;
+                text-align: center;
+                font-weight: bold;
+                font-size: 26px;
+                color: $primary;
+                margin-bottom: 30px;
+                i {
+                    color: $pink !important;
+                    font-style: initial;    
+                }
+            }
+            .text__sub-title {
+                text-align: center;
+                display: block;
+                font-size: 18px;
+                color: $primary;
+            }
+        }
 
         .nav-tabs {
             border: none;
