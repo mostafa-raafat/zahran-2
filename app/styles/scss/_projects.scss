@@ -1,0 +1,268 @@
+@import "variables";
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.center {
+    margin: 0 auto;
+    display: table;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+    display: none !important;
+}
+
+.projects {
+    &__header {
+        position: relative;
+
+        .navbar {
+            min-height: 125px;
+            background-color: $white;
+        }
+
+        .header__logo {
+            height: 72px;
+            width: 82px;
+            margin-left: 96px;
+
+            @include media-breakpoint-down(md) {
+                margin-left: 15px;
+            }
+        }
+
+        .navbar-collapse {
+            @include media-breakpoint-down(md) {
+                margin-left: 15px;
+            }
+        }
+
+        .navbar-nav {
+            .nav-item .nav-link {
+                font-size: 1.25rem;
+                color: $primary;
+                font-family: 'Exo', sans-serif;
+            }
+
+            .active .nav-link {
+                color: $pink;
+            }
+        }
+
+        .header__image {
+            width: 100%;
+        }
+
+        .header__content {
+            position: absolute;
+            bottom: 0;
+            background: #fff;
+            width: 45%;
+            height: 35%;
+
+            .content__title {
+                font-family: 'Exo';
+                font-size: 2vw;
+                margin: 5% 0 0 10%;
+                color: $primary;
+
+            }
+
+            .content__sub-title {
+                font-family: 'Exo';
+                font-weight: bold;
+                font-size: 3.5vw;
+                margin: 3% 0 0 10%;
+                color: $pink;
+            }
+
+            .content__out-line {
+                transform: rotate(270deg);
+                position: absolute;
+                left: 0;
+                top: 4vw;
+                font-family: 'Exo', sans-serif;
+                font-weight: bold;
+                font-size: 6vw;
+                color: $white;
+                opacity: 0.3;
+                text-shadow: $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px, $primary 0px 0px 1px;
+            }
+        }
+    }
+
+    &__tap {
+        margin-top: 5% !important;
+
+        .nav-tabs {
+            border: none;
+            margin-top: 5%;
+            margin-bottom: 10px;
+            .nav-item {
+                margin: 0px 10px;
+                width: 105px;
+                text-align: center;
+            }
+
+            .nav-link.active {
+                background: $pink;
+                border: none;
+                color: $white;
+            }
+
+            .nav-link {
+                border-bottom: 1px solid $pink;
+                color: $pink;
+            }
+
+        }
+
+        .project-images-container {
+            position: relative;
+            margin-top: 40px;
+        
+            &:hover .overlay {
+                opacity: 1;
+            }
+
+            .image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 15px;
+                right: 15px;
+                height: 100%;
+                width: calc(100% - 30px);
+                opacity: 0;
+                transition: .5s ease;
+                background-color: $primary;
+                .fa-long-arrow-right {
+                    position: absolute;
+                    bottom: 0;
+                    border: 0;
+                    background: $white;
+                    right: 0;
+                    width: 60px;
+                    text-align: center;
+                    font-size: 30px;
+                    height: 50px;
+                    color: $primary;
+                    cursor: pointer;
+                    &::before {
+                      text-align: center;
+                      top: 12px;
+                      position: absolute;
+                      right: 14px;
+                    }
+                  }
+            }
+
+            .text {
+                strong {
+                    font-size: 18px;
+                    display: block;
+                    margin-bottom: 10px;
+                    color: $white;
+                }
+                color: #ffffff8f;
+                font-size: 16px;
+                margin: 20px 20px 0 20px;
+                overflow: hidden;
+                height: 8rem;
+            }
+        }
+    }
+
+    &__footer {
+        padding: 45px 20px 26px 60px;
+        background-color: $purple;
+        margin-top: 80px;
+
+        .footer__img {
+            width: 86px;
+            height: 70px;
+            margin-bottom: 15px;
+        }
+
+        .footer__desc {
+            font-size: 16px;
+            color: $white;
+        }
+
+        .footer__navigation {
+            list-style-type: none;
+
+            .footer__navigation--item {
+                font-size: 20px;
+                color: $white;
+                padding-top: 20px;
+                line-height: 27px;
+                cursor: pointer;
+            }
+        }
+
+        .subscribe {
+            padding: 7% 0px 6% 8%;
+            background-color: $pink;
+            margin-right: 15px;
+            margin-top: -18%;
+
+            .subscribe__title {
+                color: $white;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .subscribe__input {
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid $purple;
+                    width: 60%;
+                    font-size: 15px;
+                    padding: 0 0 10px 0;
+                    color: $purple;
+                    font-weight: 500
+                }
+
+                input::placeholder {
+                    color: $purple;
+                }
+
+                input:focus {
+                    outline: none;
+                }
+            }
+
+            .subscribe__btn {
+                button {
+                    padding: 3% 7%;
+                    color: #fff;
+                    border: none;
+                    float: right;
+                    margin-top: -31px;
+                    font-size: 24px;
+                    background-color: $purple;
+
+                }
+            }
+        }
+
+        .footer__desc--bottom {
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+    }
+}
