@@ -154,7 +154,7 @@ body {
   background-color: rgba(41, 34, 100, 0.1);
   display: flex;
   align-items: center;
-  margin: 0 17% 0 3%;
+  margin: 0 17% 200px 3%;
   padding: 7% 0 7% 1%;
 
   @include media-breakpoint-down(md) {
@@ -499,6 +499,7 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 100px 0 0 0;
+  position: relative;
 
   .service__desc {
     padding: 4.5% 15px;
@@ -521,17 +522,38 @@ body {
       margin-bottom: 40px;
     }
 
-    .service__card {
-      border: 1px solid #eee;
-      padding: 40px 20px;
-      color: $purple;
-      font-size: 14px;
-      width: 100%;
-      margin-bottom: 40px;
+    .testimonials {
+      width: 85%;
     }
 
-    .service__card--more {
-      padding: 78px 15px;
+    .slider {
+      position: absolute;
+      top: -12%;
+      right: 0;
+
+      .carousel-control-prev {
+        left: -5%;
+        opacity: 1;
+        top: 50%;
+    }
+
+    .carousel-control-next {
+      right: -5%;
+      opacity: 1;
+      top: 50%;
+  }
+
+      #quote-carousel .carousel-indicators li {
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }

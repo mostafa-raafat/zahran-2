@@ -31,3 +31,27 @@ $('#projects a').on('click', function (e) {
     e.preventDefault()
     $(this).tab('show')
   })
+
+$('#dynamic').on('click', function() {
+ 
+    $(this).lightGallery({
+        dynamic: true,
+        dynamicEl: [{
+            'src': '../images/projects/1.png',
+            'thumb': '../images/projects/1.png',
+            'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+        }, {
+            'src': '../images/projects/2.png',
+            'thumb': '../images/projects/2.png',
+            'subHtml': '<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I\'m extremely happy I was passing the right place at the right time....</p>'
+        }, {
+            'src': '../images/projects/3.png',
+            'thumb': '../images/projects/3.png',
+            'subHtml': '<h4>Coniston Calmness</h4><p>Beautiful morning</p>'
+        }, {
+            'src': '../images/projects/4.png',
+            'thumb': '../images/projects/4.png',
+            'subHtml': '<h4>Coniston Calmness</h4><p>Beautiful morning</p>'
+        }]
+    })
+});
