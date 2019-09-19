@@ -24,10 +24,6 @@ $(document).ready(function() {
         e.preventDefault()
         $(this).tab('show')
       })
-    
-    $('.fancybox').attr('rel', 'gallery').fancybox({
-        padding : 0
-    });
 });
 
 
