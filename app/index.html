@@ -13,9 +13,7 @@
   <!-- build:css styles/vendor.css -->
   <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
-  <link type="text/css" rel="stylesheet" href="/node_modules/lightgallery/dist/css/lightgallery.min.css" />
-  <link rel="stylesheet" href="/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css" />
-
+  <link rel="stylesheet" href="/node_modules/lightcase/src/css/lightcase.css">
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -64,7 +62,7 @@
           </ul>
         </div>
       </nav>
-      <img class="header__image" src="images/header.png" alt="">
+      <div class="header__image"></div>
       <div class="header__content">
         <div class="content__title">We hate study ...</div>
         <div class="content__sub-title">your mind’s imagination is our innovation
@@ -215,32 +213,19 @@
         <div class="d-flex align-items-center justify-content-center">
           <div class="card" style="width: 18rem;" id="dynamic">
             <a
-            data-fancybox="images-preview" 
-            data-width="1500" data-height="1000"
-            data-thumbs='{"autoStart":true}'             
-            href="images/projects/1.png">
-              <img src="images/projects/1.png" class="card-img-top" alt="...">
+            data-rel="lightcase:myCollection"         
+            href="images/projects/2.png">
+              <img src="images/projects/2.png" class="card-img-top" alt="...">
             </a>
             <div style="display: none;">
-              <a href="https://source.unsplash.com/Ai2TRdvI6gM/1500x1000" data-fancybox="images-preview" 
-                 data-width="1500" data-height="1000"
+              <a href="https://source.unsplash.com/Ai2TRdvI6gM/700x400" data-rel="lightcase:myCollection"
                  data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160"></a>
             
-              <a href="https://source.unsplash.com/Hau6K6VP5vs/1500x1000" data-fancybox="images-preview" 
-                 data-width="1500" data-height="1000"
+              <a href="https://source.unsplash.com/Hau6K6VP5vs/700x400" data-rel="lightcase:myCollection"
                  data-thumb="https://source.unsplash.com/Hau6K6VP5vs/240x160"></a>
             
-              <a href="https://source.unsplash.com/muFaKaGw0eE/1500x1000" data-fancybox="images-preview" 
-                 data-width="1500" data-height="1000"
+              <a href="https://source.unsplash.com/muFaKaGw0eE/700x400" data-rel="lightcase:myCollection"
                  data-thumb="https://source.unsplash.com/muFaKaGw0eE/240x160"></a>
-            
-              <a href="https://source.unsplash.com/eXHeq48Z-Q4/1500x1000" data-fancybox="images-preview" 
-                 data-width="1500" data-height="1000"
-                 data-thumb="https://source.unsplash.com/eXHeq48Z-Q4/240x160"></a>
-            
-              <a href="https://source.unsplash.com/hBYzBU1xP6s/1500x1000" data-fancybox="images-preview" 
-                 data-width="1500" data-height="1000"
-                 data-thumb="https://source.unsplash.com/hBYzBU1xP6s/240x160"></a>
             </div>
             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
             <div class="card-body">
@@ -434,11 +419,15 @@
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-  <!-- endbuild -->
+  <script type="text/javascript" src="/node_modules/lightcase/src/js/lightcase.js"></script>  endbuild
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('a[data-rel^=lightcase]').lightcase();
+    });
+  </script>
 </body>
 
 </html>

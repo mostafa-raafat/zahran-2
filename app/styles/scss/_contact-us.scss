@@ -99,6 +99,11 @@ body {
     
         .header__image {
             width: 100%;
+            height: calc(100vh - 125px);
+            background: url(../images/header.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
     
         .header__content {

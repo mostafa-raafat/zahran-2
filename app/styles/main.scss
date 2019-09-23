@@ -110,6 +110,11 @@ body {
 
   .header__image {
     width: 100%;
+    height: calc(100vh - 125px);
+    background: url(./images/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .header__content {
@@ -154,7 +159,7 @@ body {
   background-color: rgba(41, 34, 100, 0.1);
   display: flex;
   align-items: center;
-  margin: 0 17% 200px 3%;
+  margin: 0 17% 0 3%;
   padding: 7% 0 7% 1%;
 
   @include media-breakpoint-down(md) {
@@ -302,10 +307,10 @@ body {
 
 
 .our-team {
-  height: 500px;
+  height: 650px;
   display: flex;
   align-items: center;
-
+  padding-top: 200px;
   .our-team__title {
     transform: rotate(270deg);
     font-size: 2.6vw;
@@ -645,9 +650,3 @@ body {
 }
 
 /*End Footer Style*/
-
-
-
-.fancybox-thumbs {
-  display: none;
-}
