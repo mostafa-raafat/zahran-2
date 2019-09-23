@@ -104,7 +104,7 @@ body {
     }
   }
 
-  .navbar-light .navbar-nav .active > .nav-link{
+  .navbar-light .navbar-nav .active>.nav-link {
     color: $pink !important;
   }
 
@@ -535,13 +535,13 @@ body {
         left: -5%;
         opacity: 1;
         top: 50%;
-    }
+      }
 
-    .carousel-control-next {
-      right: -5%;
-      opacity: 1;
-      top: 50%;
-  }
+      .carousel-control-next {
+        right: -5%;
+        opacity: 1;
+        top: 50%;
+      }
 
       #quote-carousel .carousel-indicators li {
         box-shadow: none;
@@ -550,6 +550,7 @@ body {
         align-items: center;
         background: transparent;
         border: none;
+
         img {
           width: 100%;
         }
@@ -646,5 +647,92 @@ body {
 
 /*End Footer Style*/
 
+/* Medium Screen */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer .footer__navigation .footer__navigation--item {
+    font-size: 16px !important;
+  }
 
+  .footer .footer__desc {
+    font-size: 15px !important;
+  }
+}
 
+/* small screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer {
+    padding: 45px 20px 26px 20px !important;
+  }
+
+  .footer .footer__desc {
+    font-size: 13px !important;
+  }
+
+  .footer .footer__img {
+    width: 80px !important;
+    height: 60px !important;
+  }
+
+  .footer__navigation .footer__navigation--item {
+    font-size: 15px !important;
+    color: #fff !important;
+    padding-top: 15px !important;
+    line-height: 27px !important;
+    cursor: pointer !important;
+  }
+
+  .footer .footer__navigation {
+    padding-left: 15px;
+  }
+
+  .footer .subscribe .subscribe__title {
+    font-size: 20px;
+  }
+
+  .footer .subscribe .subscribe__btn button {
+    margin-top: -26px;
+    margin-right: -2px;
+    font-size: 20px;
+  }
+
+  .footer .subscribe .subscribe__input input {
+    font-size: 11px;
+    padding: 0 0 6px 0;
+  }
+
+  .footer .subscribe {
+    margin-top: -22%;
+  }
+
+}
+
+/* Extra Small Screen */
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding: 45px 20px 26px 20px;
+  }
+
+  .footer .footer__navigation {
+    padding-left: 10px;
+  }
+
+  .footer .subscribe {
+    padding: 6% 0px 5% 6%;
+    margin-top: -33%;
+    margin-right: 0;
+  }
+
+  .footer .subscribe .subscribe__title {
+    font-size: 16px;
+  }
+
+  .footer .subscribe .subscribe__btn button {
+    margin-top: -21px;
+    font-size: 15px;
+  }
+
+  .footer .subscribe .subscribe__input input {
+    width: 58%;
+    font-size: 10px;
+  }
+}
