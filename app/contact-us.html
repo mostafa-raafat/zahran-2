@@ -93,22 +93,24 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="mobile__map">
-      <div class="contacts__map mapouter">
-        <div class="gmap_canvas">
-          <iframe id="gmap_canvas"
-            src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-          <a href="https://www.pureblack.de"></a>
+      <div class="contact-us__map-responsive">
+        <div class="contacts__map mapouter">
+          <div class="gmap_canvas">
+            <iframe id="gmap_canvas"
+              src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://www.pureblack.de"></a>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- End Our-Business -->
 
     <!-- Start Contact-Form -->
     <div class="contact-us__contact-form">
-      <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</h3>
+      <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      </h3>
       <form>
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -130,16 +132,16 @@
     <!-- End Contact-Form -->
 
     <!-- Start Footer -->
-    <div class="contact-us__footer">
+    <div class="footer">
       <div class="row">
         <div class="col-7">
           <div class="row">
-            <div class="col-6 p-0">
-              <img class="img-fluid footer__img" src="images/footer_icon.png">
+            <div class="col-6 p-0 expand-footer">
+              <img class="img-fluid footer__img" src="./images/footer_icon.png">
               <p class="footer__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the industry's standard dummy text ever since the</p>
             </div>
-            <div class="col-3 p-0">
+            <div class="col-3 p-0 remove-links">
               <ul class="footer__navigation">
                 <li class="footer__navigation--item">Home</li>
                 <li class="footer__navigation--item">Services</li>
@@ -147,7 +149,7 @@
                 <li class="footer__navigation--item">Testimonials</li>
               </ul>
             </div>
-            <div class="col-3 p-0">
+            <div class="col-3 p-0 d-none d-sm-block remove-links">
               <ul class="footer__navigation">
                 <li class="footer__navigation--item">About Us </li>
                 <li class="footer__navigation--item">Projects</li>
@@ -170,6 +172,13 @@
             </div>
 
           </div>
+
+          <ul class="footer__navigation d-block d-sm-none">
+            <li class="footer__navigation--item">About Us </li>
+            <li class="footer__navigation--item">Projects</li>
+            <li class="footer__navigation--item">Client</li>
+            <li class="footer__navigation--item">Contact Us</li>
+          </ul>
         </div>
       </div>
       <div class="row">

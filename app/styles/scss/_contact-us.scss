@@ -163,42 +163,60 @@ body {
         color: $white;
         display: flex;
         width: 80%;
-        padding: 10% 0% 10% 10%;
         position: relative;
+        flex-direction: column;
+        padding: 1% 0% 3% 10%;
+        margin-top: 12%;
+
+        @media only screen and (max-width: 1040px) {
+            padding: 0;
+            margin: 10% 15%;
+            width: 70%;
+        }
+
+        @media only screen and (max-width: 650px) {
+            margin: 0px 4%;
+            width: 92%;
+        }
     
         .contact-us__info {
             background: $primary;
             width: 85%;
             display: flex;
             height: 350px;
-    
+            @media only screen and (max-width: 1040px) {
+                width: 100%;
+                margin-bottom: 50px;
+                height: 300px;
+            }
+
             .info-details {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 margin-left: 10%;
-    
+
                 h3 {
                     margin-left: -25px;
                     font-size: 30px;
                     font-weight: bold;
                     margin-bottom: 35px;
                 }
-    
+
                 .phone,
                 .envelope,
                 .map-marker {
                     padding: 5px 0;
-    
+
                     span {
                         font-size: 20px;
                     }
-    
+
                     .sec-address {
                         display: block;
                         margin-left: 40px;
                     }
-    
+
                     i {
                         font-size: 25px;
                         margin-right: 20px;
@@ -208,18 +226,21 @@ body {
                 }
             }
         }
-    
+
         .contact-us__map {
             position: absolute;
             width: 62%;
             right: -15%;
-            top: 38%;
-    
+            top: 15%;
+            @media only screen and (max-width: 1040px) {
+                display: none;
+            }
+
             #gmap_canvas {
                 width: 100%;
                 height: 100%;
             }
-    
+
             .mapouter {
                 position: absolute;
                 text-align: right;
@@ -227,13 +248,23 @@ body {
                 top: 20%;
                 width: 100%;
             }
-    
+
             .gmap_canvas {
                 overflow: hidden;
                 overflow: hidden;
                 background: none !important;
                 height: 330px;
                 width: 100%;
+            }
+        }
+        .contact-us__map-responsive {
+            display: none;
+            @media only screen and (max-width: 1040px) {
+                display: block;
+                #gmap_canvas {
+                    height: 300px;
+                    width: 100%;
+                }
             }
         }
     }
