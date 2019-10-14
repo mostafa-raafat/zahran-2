@@ -163,7 +163,7 @@ body {
   padding: 7% 0 7% 1%;
 
   @include media-breakpoint-down(md) {
-    margin: 0;
+    margin: 0 0 15% 0;
     padding: 8% 0 8% 0%;
   }
 
@@ -304,27 +304,43 @@ body {
   }
 }
 
-
-
 .our-team {
-  height: 650px;
+  height: 500px;
   display: flex;
   align-items: center;
-  padding-top: 200px;
+  @media only screen and (max-width: 599px) {
+      margin: 160px 0 !important;
+      width: 90%;
+      left: 5%;
+      position: relative;
+  }
+
   .our-team__title {
     transform: rotate(270deg);
-    font-size: 2.6vw;
+    font-size: 30px;
     display: block;
     font-weight: bold;
-    width: 275px;
+    width: 370px;
     position: absolute;
     padding: 0;
-    word-spacing: 10px;
-    bottom: .5vw;
+    word-spacing: 0px;
+    bottom: 9.5vw;
     margin: 0;
     justify-content: center;
     align-items: center;
     display: flex;
+    color: $purple;
+    letter-spacing: 12px;
+  }
+  .team-title {
+      margin-bottom: 15px;
+      p   {
+          font-size: 35px;
+          font-weight: 600;
+          color: $purple;
+          letter-spacing: 10px;
+          margin: 0;
+      }
   }
 }
 
@@ -750,7 +766,59 @@ body {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
   .remove-links {
     display: none !important;
+  }
+}
+
+/* Extra Small Screen */
+@media only screen and (max-width: 795px) {
+  .our-service-none {
+    display: none;
+  }
+
+  .our-service .service__desc {
+    width: 100%;
+  }
+
+  .our-service .service__container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-full-width {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider {
+    width: 100% !important;
+    top: 35px !important;
+    position: relative !important;
+  }
+
+  .mobile-service__card--purple {
+    font-size: 15px;
+    margin: 9px 10%;
+    display: block !important;
+  }
+}
+
+.mobile-service__card--purple {
+  display: none;
+}
+
+@media only screen and (max-width: 740px) {
+  .sub-header__content {
+    width: 90%
+  }
+
+  .sub-header__images {
+    display: none;
   }
 }
