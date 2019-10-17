@@ -13,6 +13,7 @@
   <!-- build:css styles/vendor.css -->
   <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -27,7 +28,7 @@
     <!-- Start Header -->
     <div class="projects__header">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <img class="header__logo" src="images/logo.png" alt="logo">
+        <img class="header__logo" src="images/logo.png" alt="logo" data-aos="zoom-in">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
           aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,27 +37,18 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarColor03">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-right" data-aos-duration="400">
               <a class="nav-link" href="/about-us.html">About Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item active">
+            <li class="nav-item active" data-aos="fade-right" data-aos-duration="800">
               <a class="nav-link" href="/projects.html">Projects</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-right" data-aos-duration="1200">
               <a class="nav-link" href="/our-team.html">Team</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Client</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-right" data-aos-duration="1600">
               <a class="nav-link" href="/contact-us.html">Contact Us</a>
             </li>
           </ul>
@@ -68,30 +60,30 @@
 
     <div class="projects__tap row">
       <div class="projects__text">
-        <span class="text__title">We Build <i>Your Dream</i></span>
-        <span class="text__sub-title">
+        <span class="text__title" data-aos="zoom-in">We Build <i>Your Dream</i></span>
+        <span class="text__sub-title" data-aos="zoom-in">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
         </span>
       </div>
       <div class="col-12 d-flex align-items-center flex-column justify-content-center">
         <ul class="nav nav-tabs" id="projects">
-          <li class="nav-item">
+          <li class="nav-item" data-aos="fade-right">
             <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all"
               aria-selected="true">All</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-aos="fade-right">
             <a class="nav-link" id="category1-tab" data-toggle="tab" href="#category1" role="tab"
               aria-controls="category1" aria-selected="true">Category 1</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-aos="fade-right">
             <a class="nav-link" id="category2-tab" data-toggle="tab" href="#category2" role="tab"
               aria-controls="category2" aria-selected="true">Category 2</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-aos="fade-right">
             <a class="nav-link" id="category3-tab" data-toggle="tab" href="#category3" role="tab"
               aria-controls="category3" aria-selected="true">Category 3</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-aos="fade-right">
             <a class="nav-link" id="category4-tab" data-toggle="tab" href="#category4" role="tab"
               aria-controls="category4" aria-selected="true">Category 4</a>
           </li>
@@ -428,6 +420,7 @@
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="/node_modules/aos/dist/aos.js"></script>
   <!-- endbuild -->
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
