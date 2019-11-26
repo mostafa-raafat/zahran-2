@@ -3,7 +3,7 @@ console.log('\'Allo \'Allo!');
 $(document).ready(function() {
     $('.carousel').carousel();
 
-    $('.owl-carousel').owlCarousel({
+    $('.our-team .owl-carousel').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
@@ -16,6 +16,24 @@ $(document).ready(function() {
             },
             1000:{
                 items:4
+            }
+        }
+    })
+
+
+    $('.logo_criticl .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:9
             }
         }
     })
