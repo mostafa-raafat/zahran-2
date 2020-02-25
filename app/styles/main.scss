@@ -101,6 +101,7 @@ body {
       font-size: 1.25rem;
       color: $primary;
       font-family: 'Exo', sans-serif;
+      cursor: pointer;
     }
   }
 
@@ -160,11 +161,11 @@ body {
   background-color: rgba(41, 34, 100, 0.1);
   display: flex;
   align-items: center;
-  margin: 0 17% 0 3%;
+  margin: 0 17% 10% 3%;
   padding: 7% 0 7% 1%;
 
   @include media-breakpoint-down(md) {
-    margin: 0 0 15% 0;
+    margin: 0 0 22% 0;
     padding: 8% 0 8% 0%;
   }
 
@@ -832,5 +833,8 @@ body {
 
   .sub-header__images {
     display: none;
+  }
+  .sub-header__content {
+    width: 100%
   }
 }

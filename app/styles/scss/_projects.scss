@@ -48,6 +48,7 @@
                 font-size: 1.25rem;
                 color: $primary;
                 font-family: 'Exo', sans-serif;
+                cursor: pointer;
             }
 
             .active .nav-link {
@@ -136,7 +137,7 @@
             margin-bottom: 10px;
             .nav-item {
                 margin: 0px 10px;
-                width: 105px;
+                width: 160px;
                 text-align: center;
             }
 
@@ -164,7 +165,7 @@
             .image {
                 display: block;
                 width: 100%;
-                height: auto;
+                height: 183px;
             }
 
             .overlay {
@@ -209,8 +210,8 @@
                 color: #ffffff8f;
                 font-size: 16px;
                 margin: 20px 20px 0 20px;
-                overflow: hidden;
-                height: 8rem;
+                text-overflow: ellipsis;
+                height: 100%;
             }
         }
     }
