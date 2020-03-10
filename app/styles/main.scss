@@ -536,9 +536,9 @@ body {
     align-items: center;
   }
 
-  // .owl-nav {
-  //   display: none;
-  // }
+  .owl-nav {
+    display: block !important;
+  }
 }
 
 /*Start our service style*/
