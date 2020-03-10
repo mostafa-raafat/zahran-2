@@ -14,6 +14,10 @@
   outline: none !important
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
 body {
   font-family: 'Exo', sans-serif;
   color: $primary;
@@ -81,9 +85,16 @@ body {
   }
 
   .header__logo {
-    height: 72px;
-    width: 82px;
-    margin-left: 96px;
+    left: 40px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 165px;
+    height: 120px;
+    position: absolute;
+    top: 6px;
+    z-index: 100;
+    cursor: pointer;
 
     @include media-breakpoint-down(md) {
       margin-left: 15px;
@@ -110,7 +121,6 @@ body {
   }
 
   .header__image {
-    width: 100%;
     height: calc(100vh - 125px);
     background: url(../images/header.png);
     background-size: cover;
@@ -182,6 +192,7 @@ body {
 
     @include media-breakpoint-down(md) {
       font-size: 2.5rem;
+      margin-left: 20px;
     }
 
     @include media-breakpoint-down(sm) {
@@ -366,12 +377,12 @@ body {
 }
 
 #quote-carousel .carousel-indicators li {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
   border: 1px solid #ccc;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  margin: 40px 20px;
+  margin: 20px 20px;
   opacity: 0.4;
   overflow: hidden;
   transition: all .4s ease-in;
@@ -379,8 +390,8 @@ body {
 }
 
 #quote-carousel .carousel-indicators .active {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   opacity: 1;
   transition: all .2s;
 }
@@ -460,11 +471,12 @@ body {
 
 .card {
   cursor: pointer;
-  width: 18rem;
+  width: 20rem;
   margin: 10px;
   position: relative;
-  border: none;
-
+  border: 1px solid #FFFFFF;
+  transition: all ease-in 2s;
+  height: 335px;
   .card-img-top {
     height: 216px;
   }
@@ -472,9 +484,12 @@ body {
   &:hover {
     border: 1px solid $primary;
     box-sizing: border-box;
-
     .card-text {
+      text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      width: calc(100% - 40px);
       display: block !important;
+      overflow: hidden;
     }
 
     .fa-long-arrow-right {
@@ -490,7 +505,7 @@ body {
 
   .fa-long-arrow-right {
     position: absolute;
-    bottom: 73px;
+    bottom: 72px;
     border: 0;
     background: $white;
     right: 0;
@@ -511,7 +526,7 @@ body {
 .logo_criticl {
   padding: 100px 0;
 
-  .owl-carousel {
+  .owl-stage-outer {
     border: 1px solid #2922641a;
     padding: 50px 0;
   }
@@ -521,9 +536,9 @@ body {
     align-items: center;
   }
 
-  .owl-nav {
-    display: none;
-  }
+  // .owl-nav {
+  //   display: none;
+  // }
 }
 
 /*Start our service style*/
@@ -539,7 +554,7 @@ body {
     padding: 4.5% 15px;
     background-color: #292264;
     color: #fff;
-    font-size: 24px;
+    font-size: 32px;
     width: calc(30% - 15px);
     text-align: center;
   }
@@ -835,6 +850,8 @@ body {
     display: none;
   }
   .sub-header__content {
-    width: 100%
+    width: 85% !important;
   }
+
+
 }

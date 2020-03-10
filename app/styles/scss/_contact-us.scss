@@ -70,9 +70,16 @@ body {
         }
     
         .header__logo {
-            height: 72px;
-            width: 82px;
-            margin-left: 96px;
+            left: 40px;
+            background-image: url(../images/logo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 165px;
+            height: 120px;
+            position: absolute;
+            top: 6px;
+            z-index: 100;
+            cursor: pointer;
     
             @include media-breakpoint-down(md) {
                 margin-left: 15px;
@@ -99,7 +106,6 @@ body {
         }
     
         .header__image {
-            width: 100%;
             height: calc(100vh - 125px);
             background: url(../images/header.png);
             background-size: cover;
@@ -208,9 +214,9 @@ body {
                 .envelope,
                 .map-marker {
                     padding: 5px 0;
-
+                    margin-left: -5%;
                     span {
-                        font-size: 20px;
+                        font-size: 16px;
                     }
 
                     .sec-address {
@@ -219,7 +225,7 @@ body {
                     }
 
                     i {
-                        font-size: 25px;
+                        font-size: 20px;
                         margin-right: 20px;
                         width: 20px;
                         text-align: center;
